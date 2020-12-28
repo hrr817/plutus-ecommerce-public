@@ -1,4 +1,8 @@
+
 # plutus-ecommerce-public
+
+### This project is incomplete!
+
 *A miserly failed attempt to make an ecommerce website with Commerce JS. 
 Though you can checkout my code.* 
 
