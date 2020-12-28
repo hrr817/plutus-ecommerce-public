@@ -1,7 +1,8 @@
 
 # plutus-ecommerce-public
+Caution - this project is incomplete!
 
-### This project is incomplete!
+[https://plutus-ecommerce.netlify.app/](https://plutus-ecommerce.netlify.app/)
 
 *A miserly failed attempt to make an ecommerce website with Commerce JS. 
 Though you can checkout my code.* 
