@@ -1,0 +1,36 @@
+.custom-select {
+     // Add style to container     
+
+     .label {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          min-width: 100%;
+
+          div {
+               display: flex;
+               flex-direction: row;
+               justify-content: flex-end;
+          }
+
+     }
+
+     label {
+          width: 100%;
+          padding: 0.4em 0.8em;
+     }
+
+     select {
+          appearance: none;
+          outline: none;
+          padding: 0.6em;
+          margin: 0;
+          width: 100%;
+          cursor: pointer;
+          border: 1px solid #6e6e6eea;
+          color: inherit;
+          background: inherit;
+          font-size: inherit;
+          transition: all 0.2s linear;
+     }
+}

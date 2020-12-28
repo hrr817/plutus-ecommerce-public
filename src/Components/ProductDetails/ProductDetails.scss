@@ -1,0 +1,144 @@
+.product-details-container {
+     display: flex;
+     flex-direction: column;
+
+
+     section {
+          display: flex;
+          justify-content: center;
+          min-height: auto !important;
+          width: 100%;
+     }
+
+     .section-one {
+          align-items: center;
+          position: relative;
+          min-height: 50vh;
+
+          img {
+               width: 100%;
+               margin: 0;
+          }
+
+          .btn {
+               display: flex;
+               position: absolute;
+               top: 0;
+               justify-content: center;
+               align-items: center;
+               appearance: none;
+               border: none;
+               outline: none;
+               height: 100%;
+               background: transparent;
+               padding: 0 0.5em;
+               margin: 0;
+
+               &:hover svg {
+                    background: #b6b6b6c2;
+
+               }
+
+               svg {
+                    fill: #161616;
+                    width: 3.5em;
+                    height: 3.5em;
+                    padding: 0.5em;
+                    transition: all 0.2s linear;
+               }
+
+          }
+
+          .next {
+               right: 0;
+          }
+          
+          .prev {
+               left: 0;
+          }
+
+     }
+
+     .section-two {
+          flex-direction: column;
+          align-items: flex-start;
+          height: auto;
+          padding: 1em;
+
+          div {
+               width: 100%;
+               margin: 0.2em 0;
+               padding: 0.2em 0;
+          }
+
+          .right {
+               display: flex;
+               justify-content: flex-end;
+          }
+
+
+          .variant {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               color: inherit;
+
+               .title {
+                    border-bottom: 1px solid #807e7e59;
+                    margin: 0.2em 0;
+                    padding: 0.2em 0;
+               }
+
+               span,
+               div {
+                    margin-top: 0.2em;
+                    padding-top: 0.2em;
+               } 
+
+               div {
+                    span {
+                         text-align: center;
+                         padding: 0.2em;
+                         margin: 0.2em;
+                         border: 1px solid rgb(126, 126, 126);
+                    }
+               }
+
+               p {
+                    margin-block-start: 0.2em;
+                    margin-block-end: 0.2em;
+               }
+
+          }
+     }
+}
+
+@media screen and (min-width: 1000px) {
+     .product-details-container {
+          flex-direction: row;
+          margin: 3em auto;
+
+          .section-one {
+               position: relative;
+               width: 100%;
+          }
+     }
+}
+
+.btn-custom {
+     cursor: pointer;
+     color: inherit;
+     background: inherit;
+     border: none;
+     font-size: 1rem;
+     padding: 0.5em 1em;
+     outline: none;
+     border: 1px solid #6b6a6ada;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     transition: background 0.3s linear;
+     text-decoration: none;
+
+     &:hover {
+          background: #6b6a6a59;
+     }
+}

@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Josefin Sans;
+  src: url("./assets/fonts/Josefin_Sans/static/JosefinSans-Regular.ttf");
+}
+
+// Defaul theme
+$bg: #fdfcfa;
+$color: #0f0e0e;
+
+.light {
+  color: #0f0e0e;
+  background: #fdfcfa;
+}
+
+.dark {
+  color: #fafafa;
+  background: #313131;
+}
+
+.app-light {
+  background: #f0f0f0;
+}
+
+.app-dark {
+  background: #242222;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Josefin Sans, sans-serif;
+  color: $color;
+  background-color: $bg;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app {
+  min-height: 100vh;
+  max-height: auto;
+  overflow-x: hidden;
+}
+ 

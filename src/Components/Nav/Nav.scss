@@ -1,0 +1,65 @@
+.svg-icon {
+     cursor: pointer;
+     display: inline-flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     border: none;
+     padding: 0.8em 0.2em;
+     margin: 0 0.5em;
+     border-radius: 0.4em;
+     outline: none;
+     font-size: 1rem;
+     font-family: Josefin Sans, sans-serif;
+     transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+     height: 3em;
+
+     span {
+          color: inherit;
+          margin: 0.3em;
+          transition: all 0.4s ease-in-out;
+     }
+
+     svg {
+          margin: 0.3em;
+          height: 100%;
+          fill: #0f0e0e;
+          background: transparent;
+          transition: all 0.4s ease-in-out;
+     }
+
+     &:hover {
+          background: #3f3e3e;
+
+          span, svg {
+               color: #fdfcfa;
+               fill: #fdfcfa;
+          }
+     }
+
+     .num {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          height: 1.5em;
+          width: 1.5em;
+          padding: 0.4em;
+          background: #7c777783;
+     }
+}
+
+.focus {
+     span,
+     svg {
+          color: #fdfcfa;
+          fill: #fdfcfa;
+     }
+}
+
+.dark {
+     svg {
+          fill: #fdfcfa;
+     }
+}

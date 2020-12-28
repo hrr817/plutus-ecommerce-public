@@ -1,0 +1,24 @@
+.custom-input {
+     // Add styles to container
+
+     label {
+          padding: 0.4em 0.8em;
+     }
+
+     input[type="text"],
+     input[type="email"] {
+          outline: none;
+          color: inherit;
+          border: 1px solid #6e6e6eea;
+          padding: 0.6em;
+          background: inherit;
+          transition: all 0.2s linear;
+          font-size: 1rem;
+          font-family: inherit;
+          max-width: 100%;
+
+          &:focus {
+               background: #88838362;
+          }
+     }
+}

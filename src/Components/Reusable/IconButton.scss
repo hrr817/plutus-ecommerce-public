@@ -1,0 +1,24 @@
+.icon-button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 0.4em;
+     border-radius: 0.4em;
+     background: #1f1d1dad;
+     margin-right: 1.5em;
+     transition: background 0.5s linear;
+
+     &:hover {
+          background: #838080;
+     }
+
+     &:active {
+          transform: scale(0.95);
+     }
+
+     svg {
+          fill: #fdfcfa;
+          width: 2em;
+          height: 2em;
+     }
+}

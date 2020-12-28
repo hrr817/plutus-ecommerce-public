@@ -1,0 +1,200 @@
+.empty-section {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     min-height: 60vh;
+     text-align: center;
+
+     .square {
+          width: 5em;
+          height: 5em;
+     }
+
+}
+
+.tab-section {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     padding: 0 0.5em;
+     margin: 0 0.5em;
+     border-bottom: 1px solid #b4b0b0cc;
+
+     div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 0.5em 0;
+          margin-top: 0;
+          border-bottom: 3px solid #00000000;
+          font-size: 0.8em;
+          width: 100%;
+          
+          span {
+               display: inline-flex;
+               justify-content: center;
+               align-items: center;
+               background: #817e7e88;
+               border-radius: 50%;
+               width: 2em;
+               height: 2em;
+               margin: 0.5em;
+          }
+
+          // Active for above span
+          .active-num {
+               background: #2684ffab;
+          }
+     }
+
+     // Active for above div
+     .active-tab {
+          border-color: #2684ffab;
+     }
+
+
+
+}
+
+// For responsive tab-section
+@media (min-width: 768px) {
+     .tab-section {
+     flex-direction: row;
+
+          div {
+               min-width: 25%;
+               margin-right: 1em;
+          }
+
+     }
+}
+
+.button-full {
+     cursor: pointer;
+     outline: none;
+     text-decoration: none;
+     color: #ffffff;
+     width: 100%;
+     padding: 1em;
+     margin: 0;
+     border: none;
+     font-size: inherit;
+     font-family: inherit;
+     transition: background 0.2s linear;
+     background: #0351b8cc;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: pre;
+
+     &:hover {
+          background: #0351b88f;
+     }
+}
+
+.back {
+     text-align: left;
+     border-radius: 0 0 0 0.4em;
+}
+
+.next {
+     text-align: right;
+     border-radius: 0 0 0.4em 0;
+}
+
+// Style according to your taste
+.form {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: auto;
+     align-items: flex-start;
+     justify-content: center;
+     gap: 0.8em 1em;
+     width: 100%;
+     padding: 1em 0 0 0;
+
+     // All  div inside form are rows (responsive row)
+     div {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          margin: 0 auto;
+          width: 90%;
+     } 
+
+     .span-column {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          margin-top: 1em;
+          
+          a {
+               width: 100%
+          }
+
+
+     }
+}
+
+// Responsive form
+@media screen and (min-width: 768px) {
+     .form {
+          grid-template-columns: 1fr 1fr;
+
+          .span-column {
+               grid-column: 1 / span 2;
+          }
+     }
+}
+
+
+.item-in-order-summary {
+     display: flex;
+     flex-direction: column;
+     padding: 0.2em;
+     margin: 0.2em;
+     width: 100%;
+     
+     div {
+          display: flex;
+          justify-content: space-between;
+          padding: 0.2em;
+     }
+}
+
+
+.confirm-container {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+     padding-bottom: 2em;
+
+     svg {
+          width: 10em;
+          height: 10em;
+          padding: 1em;
+          border-radius: 1em;
+          fill: #15ff21d8;
+     }
+
+     a {
+          cursor: pointer;
+          color: inherit;
+          background: inherit;
+          border: none;
+          font-size: 1.2rem;
+          padding: 0.5em 1em;
+          outline: none;
+          border: 1px solid #6b6a6a50;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          transition: background 0.3s linear;
+          text-decoration: none;
+
+          &:hover {
+               background: #6b6a6aaf;
+          }
+          
+     }
+}
